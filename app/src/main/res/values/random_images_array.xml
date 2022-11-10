@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="apptour">
+        <item>@drawable/testing</item>
+        <item>@drawable/testing2</item>
+        <item>@drawable/testing3</item>
+        <item>@drawable/testing4</item>
+        <item>@drawable/testing5</item>
+        <item>@drawable/tesing6</item>
+
+    </array>
+
+</resources>

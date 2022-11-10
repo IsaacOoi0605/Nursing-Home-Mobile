@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientDetail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:id="@+id/Patient"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_border"
+            android:paddingLeft="20dp"
+            >
+
+            <TextView
+                android:id="@+id/patientDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Patient Detail"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@id/patientDetail"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/textIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@id/textView"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/textContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_below="@id/textIC"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textContact"
+                android:layout_marginTop="5dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Hospitalised"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_border"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/Patient"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/hosTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hospitalised Info"
+                android:textStyle="bold"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/bedInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/Day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Disease"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_border"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/Hospitalised"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            >
+
+            <TextView
+                android:id="@+id/disTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease Having"
+                android:textStyle="bold"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Medicine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_border"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/Disease"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            >
+
+            <TextView
+                android:id="@+id/medTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication"
+                android:textStyle="bold"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

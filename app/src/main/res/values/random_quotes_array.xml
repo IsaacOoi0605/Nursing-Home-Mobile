@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="textArray">
+        <item>All our dreams can come true, if we have the courage to pursue them.</item>
+        <item>The secret of getting ahead is getting started.</item>
+        <item>The best time to plant a tree was 20 years ago. The second best time is now.</item>
+        <item>It’s hard to beat a person who never gives up.</item>
+        <item>Everything you can imagine is real.</item>
+        <item>Happiness is not something ready made. It comes from your own actions.</item>
+
+    </string-array>
+
+
+</resources>
